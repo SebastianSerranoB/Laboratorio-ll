@@ -1,0 +1,8 @@
+Agregar dependencia de ejercicio si queremos utilizar elementos de un proyecto como pueden ser una clase;
+ir a referencia de proyectos y marcar casilla de proyecto que buscamos
+luego aclarar en el main donde se utilizara: "" using nameSpace;, using Ejercicio01;"" por ejemplo
+
+Podemos cambiar alias en el USING
+using ALIAS = System.console;
+
+ALIAS.WriteLine en ves de console.writeLine(" hola: ");

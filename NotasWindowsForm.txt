@@ -1,0 +1,28 @@
+WindowsForms es una interfaz grafica de windows
+los formularios son objetos
+creamos el proyecto qu eno dice(.NET framework)
+
+
+-Exisen convenciones para nombrar/identificar a los formularios
+FrmMiFormulario; por ejemplo, siempre el Frm primero
+-bottones,    btnSaludar; ej
+
+PROPIEDADES
+desde aca estilizamos los COMPONENTES
+conviene manejarse desde las propiedades para agregar, eliminar o modificar componentes, 
+
+COMPONENTES
+cuadro de herramientas para acceder, botones, labels, etc
+
+EVENTOS
+por ejemplo cuando hacemos un click en el boton, se genera el eventoClick, profundizaremos luego
+cuando haces doble click te crea la funcion dobleCkil del boton en miForm.cs
+//profundizaremos al final del cuatrimestre
+
+ENUMERADOS
+MessageBoxButtons
+despliegua lista definida automaticamente, y damos a sellecionar opciones hardcodeadas
+
+click derecho , ver codigo  en el form1.cs para acceder a la parte codeigo
+
+//dialog result

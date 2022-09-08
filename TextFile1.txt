@@ -1,0 +1,75 @@
+Sobrecarga de metodos no lleva : this, pero puede llamar dentro de los corchetes
+Sobrecarga de constructores; no puedo llamar dentro al otro constructor, pero puededo hacer un this
+get son metodos
+set metodo
+atributos, 
+propiedades es una manera de acceder a los atributos, siempre les corresponde uno, aqui validamos las interacionnes que tenemos con los atributos,
+/// triple carga agrego un summary a las sobrecargas de metodos y constructores 
+sobrecarga de operadores -> public static(siempre static)valor de retorno (int)operator +()
+ public static int operator +(tipoDeClase n1,int n2) (la sobreecarga de +  siempre recibe al menos dos parametros porque es un operador binario)
+ Y uno de los parametros debe ser del tipo de la clase dond eestoy declarando esta sobrecarga de operador
+
+ public static int operator +(Vehiculo n1,Vehiculo n2)
+ {
+ 
+	return n1.naftaLitros + n2.naftaLitros;
+
+ }
+ consolewriteline(v1 + v2) en la sobrecarga de mi metodo + suma los litros de nafta porque lo defiini asi
+ si quiero sobrecargar un bool == tengo que sobrecargar tambien el != sino tira error
+
+explicit/implicit
+son formas de castear donde especifico dentro de la clase que voy a retornar de una instancia
+por ej
+explicita =        retorna int en clase = (int)Numero   //si ya existe sobrecarga explicita te avisa, no se pierden datos
+impplicita =     retorna      //aca te avisan que se pueden perder datos por ej si pasaras de un double a un int
+pero si haces double d1 = 5 te aseguras no perder dato porque es mas grande
+
+una cosa es el casteo explicito e implicito que vimos en las primeras clases, y otra cosa es la sobrecargar explicita e implicita que estamos viendo ahora. La sobrecargar explciita/implcitia la customizamos nosotros segun lo q pida el ejercicio
+
+#reguion Atributos
+#endregion
+#reguion Constructores
+#endregion
+#reguion Propiedades
+#endregion
+#reguion Metodos
+#endregion
+#reguion Operadores
+#endregion
+
+Nos permite agilizar el codigo, facilidad para buscar las cosas, atributos, conswtructores, metodos
+
+
+propfull tab tab
+crtl + . agregar campo
+prop tab tab
+para intellisense propeidaes
+
+usaremos propiedades normalmente y no getters setters, hacen lo mismo pero son un pooc mas prolijas las prop; con las props accedemos a valores desde fuera de clase, dentro de clase podemos operar diferente
+en el main seria por ejemplo     objeto.Nombre    (la mayuscula de N es necesaria)
+
+"$"  nos permite concatenar sin utilziar llaves ej   return $"mi nombre es {this.nombre} y tengo {this.edad} años";
+
+la sobrecarga de operadores siempre es publica y statica
+
+
+public static implicit  operator string(int numero)
+{
+	return numero;
+}
+tipoDeColor = numeroIngresado;    el implicito es directo
+
+
+//es mas evidente el casteo, por eso solemos utilizar el explicit
+public static explicit  operator string(numero)
+{
+	return numero;
+}
+
+tipoDeColor = (string)numeroIngresado;  este es el casteo explicito, es mas evidente
+en ambos casos si no existitiera el uno el otro o ninguno me lo informa el compilador
+cuando conviene usar uno u otro? si necesitamos que sea reconocible, usaremos el explciit, pero nos daremos cuenta
+
+
+Limpiar solucion

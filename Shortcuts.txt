@@ -1,0 +1,4 @@
+crtl+k+c //comentar todo arrastrando con el mouse
+crtl+k+u //descomentar todo arrastrando con el mouse
+f2
+crtl+h
