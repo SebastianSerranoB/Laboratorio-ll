@@ -15,7 +15,7 @@ namespace Clase05_Ej02
             //Ingresante nuevoAlumno;
             //nuevoAlumno = new Ingresante(this.textBoxNombre.Text, this.textBoxDireccion, this.groupBoxGenero.Text);
             //  public Ingresante(string nombre, string direccion, string genero, string pais, string[] cursos, int edad)
-            //sssssss
+            //ssssssssssss
 
             //mostramos todos los datos 
 
