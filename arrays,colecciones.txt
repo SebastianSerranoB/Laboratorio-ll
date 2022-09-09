@@ -1,0 +1,55 @@
+int[] arrayEnteros;
+arrayEnteros = new int[5];
+los arrays en c# tienen un tamaño fijo, definido
+tambien empiezan desde el indice 0
+
+
+array bidemencional => una planilla de excel/google sheet  es decir columnas y filas -> x,y fila,Columna
+new int[2,3]; aca podemos guardar 6 elementos int[0,0] : la posicion 00 
+tenemos que indicar tanto el indice x como el y, siempre, no existe el [0]
+
+
+foreach(var objeto in arrayBidismensional)
+{}
+el var, busca el tipo una sola ves y se mantiene en ese tipo
+//no se recomienda el uso, es mejor especificar el tipo, se supone que trabajamos con un tipado fuerte
+//igualmente se usa mucho en laburo y se lo ve en internet; a veces se puede hacer mas legible ocn el var
+//lo que hay que recordar es que el primer tipo de dato que reconoce el var es el que va a asignar permantente mente para la variable}
+
+
+COLECCIONES
+for each  // no realizes una modificacion que cambien la referencia del tamaño d ela lista, porque se piere de y rompe, no sabe como iterar la lista
+Remove(numero)
+RemoveAt(indice)
+RemoveAll(coincidencia)remueve todas las coincidencias por ejemplo si pusieras el 5, remueve todos los 5 
+
+list<int> numerosColeccion;
+numerosColeccion = new List<int>();
+
+Dictionary<string, claseCreada> diccionario = new Dictionary<int, int>();
+.key 
+.value
+el diccionario esta bueno
+
+//(key, value)  asignas una referencia  un valor o indice
+ejemplo,					KEY					VALUE
+objetoTipoDiccionario.Add("El mejor alumno",indice 10)
+
+entonce buscas el mejor almno y te va a aparecr, es muy util esto
+
+QUEUE parecido a diccionario para declarar
+
+queue lista
+dequeue saca el primero,
+enqueue mete el primero
+
+asi le decimos adios casi a los arregglos, qeda para casos muy puntuales
+CopyTo(array,desdeIndice)
+
+stack
+es una pila
+se van apilando
+el ultimo que pongo esta arriba, y el que saco es el de arriba tambien(es decir, el ultimo que puse)
+Stack<int>
+
+sortedList

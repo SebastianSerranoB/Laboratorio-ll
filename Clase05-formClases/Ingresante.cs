@@ -6,7 +6,7 @@ namespace Clase05_formClases
     {
         #region Atributos
 
-        private string[]? cursos;
+        private string[] cursos;
         private string? direccion;
         private string? genero;
         private string? nombre;
@@ -19,7 +19,7 @@ namespace Clase05_formClases
        
         public Ingresante()
         { 
-            this.cursos = null;
+            this.cursos = Array.Empty<string>(); //strig.isEmpty para array
             this.direccion = string.Empty;
             this.genero = string.Empty;
             this.nombre = string.Empty;
@@ -35,7 +35,6 @@ namespace Clase05_formClases
             this.pais = pais;
             this.edad = edad;
             this.cursos = cursos; 
-            //this.cursos = new string[3];
         }
 
         #endregion
@@ -51,9 +50,18 @@ namespace Clase05_formClases
             sB.AppendLine($"Edad: {this.edad}");
             sB.AppendLine($"Genero: {this.genero}");
             sB.AppendLine($"Pais {this.pais}");
-            sB.AppendLine($"Cursos: {this.cursos}");
+           // sB.AppendLine($"Cursos: {this.cursos}"); es un array, hay que recorrerlo
+            sB.AppendLine("Cursos:");
 
-            //parseamos a string, porque StringBuilder es una clase unica
+            foreach (string curso in this.cursos) //como evito este warning de NULL? sacandole el ? en la declaracion funciono, 
+            {
+                if (!string.IsNullOrWhiteSpace(curso))
+                {
+                    sB.AppendLine($"  {curso}");
+                }
+            }
+
+            
             return sB.ToString();
         }
 

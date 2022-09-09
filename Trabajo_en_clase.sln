@@ -17,6 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase_02-Ej01", "Clase_02-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apuntes", "Apuntes", "{BABBBA8A-7C1F-4F89-8420-DC02A8C1E0CE}"
 	ProjectSection(SolutionItems) = preProject
+		arrays,colecciones.txt = arrays,colecciones.txt
 		DependenciaY.txt = DependenciaY.txt
 		Shortcuts.txt = Shortcuts.txt
 		TextFile1.txt = TextFile1.txt
@@ -55,9 +56,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clase05_pruebas", "clase05_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase05-Ej01", "Clase05-Ej01\Clase05-Ej01.csproj", "{7804667D-E3DB-4D18-8AB0-D3A7BEE5DBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase05-Ej02", "Clase05-Ej02\Clase05-Ej02.csproj", "{C4E53802-D9F0-46A7-965F-4B6DBD2771F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase05-Ej02", "Clase05-Ej02\Clase05-Ej02.csproj", "{C4E53802-D9F0-46A7-965F-4B6DBD2771F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase05-formClases", "Clase05-formClases\Clase05-formClases.csproj", "{C6CE73A3-CC36-4009-B423-C09C92609044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase05-formClases", "Clase05-formClases\Clase05-formClases.csproj", "{C6CE73A3-CC36-4009-B423-C09C92609044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
