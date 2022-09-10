@@ -42,6 +42,12 @@ namespace Billetes
             get { return Peso.cotizRespectoDolar; }
         }
 
+        //METODO REQUERIDO EN EJ 3, WINDOWS FORMS, COTIZADOR CON FORMULARIO
+        public static void SetCotizacion(double value)
+        {
+            value = Peso.cotizRespectoDolar;
+        }
+
         //sobrecarga implicita de Double
         public static implicit operator Peso(double d)
         {
