@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace clase02_ej03
 {
-    internal class Conversor
+    public class Conversor
     {
 
         //Otro método más simple para convertir una variable de entero decimal en una variable de cadena binaria es usar la función Convert.ToString() en C#.
