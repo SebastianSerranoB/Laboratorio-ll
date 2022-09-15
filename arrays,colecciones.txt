@@ -53,3 +53,25 @@ el ultimo que pongo esta arriba, y el que saco es el de arriba tambien(es decir,
 Stack<int>
 
 sortedList
+
+
+ //    // no vas a poder hacerlo porque el foreach es read-only.
+            // //          Como cada elemento de tu array es un type-value, no lo podes modificar.
+            // //          Distinto seria si fuese un referenc-type como puede ser un objeto de una clase que vos creaste y quisieras modificar una propiedad
+            ////              Para hacer eso si o si vas a necesitar un for
+            //foreach (int numero in arrayEnteros)
+            //    {
+            //        //arrayEnteros[numero] = numeroRandom.Next(-100, 100); //carga solo en el primer inidcie[0]
+            //  //  numero = numeroRandom.Next(-100, 100);    
+            //}
+
+            //Console.WriteLine("Foreach");
+            //foreach (int indice in arrayEnteros)
+            //{
+            //    Console.WriteLine(indice); // imprime bien, el problema esta en la asignacion de valores en los indices del arreglo,el primer foreach
+            //}
+            
+            //forceach
+            //recorre siempre de principio a fin , no al reves ni de otra forma
+            //recorret toda la longitud
+            //Solo si no necesitamos un contador, porque no sabremos en que indice va

@@ -1,0 +1,10 @@
+Encapsulamiento
+abstaccion, proteger el ingreso de datos, validarlos, validar excepciones
+
+ejemplos
+-atributos de clase siempre privados
+- atributos le corresponde propiedades get set try catch pra validar
+- enumeradores ( como listas cerradas)
+- indexadores (listas cerradas que se acceden con un indice cerrado) puede ser de varios tipos de datos, le asignas un valor a indices fijos
+con los indexadores  interactuo con colleciones, puedo asignarles valores o traer por indice
+ESTADO = VALOR QUE TIENE EL ATRIBUTO EN DETERMINADO MOMENTO
