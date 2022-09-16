@@ -31,15 +31,15 @@ namespace AtencionAlCliente
         public Negocio(string nombre) : this()
         {
             this.nombre = nombre;
-         
         }
 
         public Cliente Cliente
         {
             get
             {
-                  return this.clientes.First();       //deberia retornar el indice 1 o el 0 ?
-              // return this.clientes.ElementAt(0); //permite especificar el indice
+                //  return this.clientes.First();       //deberia retornar el indice 1 o el 0 ?
+                return this.clientes.Peek();
+                // return this.clientes.ElementAt(0); //permite especificar el indice
             }
             set 
             {
@@ -117,19 +117,16 @@ namespace AtencionAlCliente
 
         public static bool operator ~(Negocio n)
         {
-
-           // CS0120; Se requiere una referencia de objeto para el campo, metodo o propiedad negocio.caja // negocio.Cliente no estaticos
-            return Negocio.caja.Atender(Negocio.Cliente); //como Deberia funcionar esta linea?
-            //no puede acceder al atributo de la clase porque es estatico, deberia hacer los atributos estaticos? 
-        //    No puede acceder a los atributos de la clase(salvo que sean estáticos)
-        //No puede utilizar el operador this, ya que este método se puede llamar sin tener que crear un objeto de la clase.
-        //Puede llamar a otro método siempre y cuando sea estático.
-        //Un método estático es lo más parecido a lo que son las funciones en los lenguajes estructurados
-        //        (con la diferencia que se encuentra encapsulado en una clase)
+            if (n.clientes.Count() > 0  &&  n is not null) //como evito el null?
+            {
+                n.caja.Atender(n.clientes.Dequeue());
+                return true;
+            }
+           
+            return false;
         }
-       // El operador ~generará una atención del próximo cliente en la cola, 
-        //  utilizando la propiedad Cliente y el método Atender de PuestoAtencion.Retornará true si pudo realizar la operación completa.
-
+      
+       
 
     }
 }

@@ -73,3 +73,124 @@ cuando conviene usar uno u otro? si necesitamos que sea reconocible, usaremos el
 
 
 Limpiar solucion
+
+
+
+ENTENDIENDO STATIC
+ STATIC ES UN ATRIBUTO /DATO  O COMPORTAMIENTO/METODO  COMPARTIDO POR TODOS LOS OBJETOS DE DE UNA MISMA CLASE, ES DECIR, NO ES SUBJETIVA PARA CADA INSTANCIA, NO VARIA
+ EJEMPLOS DE STATICS
+ LA GRAVEDAD AFECTA A TODOS LOS HUMANOS EN LA TIERRA POR IGUAL, NO VARIA
+ LA TEMPERATURA EN UN DETERMINADO LUGAR, LA TEMPERATURA CORPORAL/INTERNA SI VARIA EN INDIVIDUOS PERO LA TEMPERATURA EXTERNA NO
+ !!!!!NO QUIERE DECIR QUE NO SE PUEDA CAMBIAR , NO ES NECESARIAMENTE UNA CONSTANTE FIJA, LO QUE NUNCA CAMBIA, ES LA GENERALIDADD, QUE TODOS COMPARTEN EL MISMO VALOR O FUNCION
+
+ Abstraccion: Es la capacidad de discernir que datos y acciones necesito p definir mi clase. Me concentro en lo q importa e ignoro lo q no m sirve
+
+PMP : PRODUCTO MINIMO POSIBLE, 
+INTENTAR DARLE FUNCIONALIDAD BASICA Y CONCRETA PARA QUE FUNCIONE UN PROGRAMA, ES  UNA TECNICA , de ahi en adelante s epueden modificar, agregar/sacar atributos funcionaldiades
+pero esta bueno el pmp para pensar el core, lo esencial, la base de una clase
+
+
+
+SOBRECARGHA
+Para poder sobrecargar un método es necesario que,
+teniendo el mismo nombre, se cambie la firma del mismo. Con la firma me r
+efiero a: la cantidad de parámetros que le paso al mismo, el tipo de dato de estos, 
+o el orden de los mismos. El valor de retorno del método no influye porque la firma sigue siendo la misma.
+
+FIRMA(NOMBRE,)   PARAMETROS(TIPO,ORDEN) VALOR DE RETORNO ES IGUAL
+NOS DA FLEXIBILIDAD 
+
+
+AMBAS SON CONVERSIONES, 
+EN EL CASTEO EXPLICITO EXISTE SIEMPRE PERDIDA DE INFORMACION ()
+EN LA IMPLICITA NO ==
+
+explicito por ejemplo tenes 7,15 float y lo queres pasar a entero, te va a quedar un 7 y vas a perder los 0.15
+
+
+implicito es al contrario, pasas de 7 int a 7.00 float, no perdes
+
+
+EN EL EXPLICITO    MOSTRAMOS, QUE SE NOTE QUE (JUGADOR)NUMERO   HAY UNA PERRDIDA DE DATOS, ASI SABEMOS QUE POR EJEMP
+PODEMOS CONVERTIR EXPLICITAMENTE CUALQUIER COSA  A CUALQUIER OTRA COSA( OTRA COSA ES QUE SEA CORRECTO) PERO LO EXPLICITAMOS PARA QUE SEPA QU ENO ES UN
+CONVERSION PERFECTA
+
+EN LA IMPLICITA NO SE PIERDEN DATOS  JUGADOR 2 = JUGADOR 3   SON MISMO TIPO, NO PIERDEN DATOS (SI BIEN SI VALORES DE ATRIBUTOS ETC)
+PERO EN LA EXPLICITA ES UNA CONVERSION TOTALMENTE DISITNTAA
+
+JUGADOR
+APELLIDO
+SUELDO
+CAMISETA
+
+
+
+
+---- DECISIONES DE DISEÑO
+
+
+LAS SOBRECARGAS SIEMPRE CONVIENE DOCUMENTARLAS CON EL SUMARRY PARA EXPLICAR BIEN LO QUE SUCEDE
+modificamos adentro los return
+
+CONVERSION IMPLICITA
+JUGADOR1 = JUGADOR2 
+numero = jugador2
+no es necesario castear, podemos asignar, aca le asignariamos el num de camiseta de jugador2 por ejemplo pero jugador2 no pierde datos,
+si fuera al reves, como el ejemplo de abajo (jugador)numero 10 si estariamos en problemas, pensalo como jugador2 = numero? como convertis un numero a un jugador?
+es imposible evitar la perdida de datos, pero se puede hacer , como se ve abajo,  creando un nuevo jugador con el numero de camiseta
+
+CONVERSION EXPLICITA
+
+(JUGADOR)Numero10    
+instancia un nuevo jugador con la camiseta 10 pero pierde apellido y sueldo (digamos construye por defecto esos datos)
+
+ACA, LE PASAMOS POR EJEMPLO PARA QUE CONSTRUYA UN NUEVO JUGADOR CON ESTE NUMERO DE CAMISETA, PERO SE PIERDE EL APELLIDO Y EL SUELDO, 
+dentro del codigo explicito vas a adaptar el casteo a mano, vas a convertir dos tipos que no es normal que se conviertan, dos cosas distintas, se pierden datos
+
+
+
+
+
+
+
+Sobrecarga de operadores
+-public
+-static -> es compartido por todas las instancias de esa clase, no son echos a mano para cada objeto
+-debe contener al menos un objeto de la clase donde esta declarada
+-retorna algo , es decir nuna void
+
+
+
+LISTA O ARRAY?
+LISTA ES DINAMICA, TIENE METODOS QUE FACILITAN EL ORDENAMIENTO, LA MODIFICACION, LA BUSQUEDA O OTRAS FUNCIONES ESPECIFICAS, interaccion entre listas
+EL ARRAY ES ESTATICO(NO PUEDE REDIMENSIONARSE) Y NO COMPARTE ESOS METODOS
+la lista es como un array con anabolicos, esteroides
+
+
+el for, foreach, si tenes que manejar un millon de objetos , el for va  acomvenir, porque el foreach es mas lentos, mas performance, mas eficcieicna
+
+dif fundamentales con listas
+queue stack, cambia el metodo de ordenamiento fundamentalmente (de indexacion , ordenamiento del array), y claro algunos metodos y funcionalidades
+dictionary claro que la key, value, indexada por clave y valor, permite otras funcoionaldiaes, pauta
+
+metodos de ordenamiento o indexacion marcan las listas, difreecencian
+discernir
+
+
+
+partial class
+me permite separar una clase
+en un lado tengo una parte
+en otra tengo otra
+no hay un codigo enorme en un mismo lugar, y conviene separarlos pero son de la misma clase, el claro ejemplo es win form, parte grafica interfaz y 
+parte codigo   (front y back podria pensarse asi)  html y javascript
+
+
+encapsulamiento
+modificadores de acceso
+
+herramientas para acceder a los atributos y y de interactuar con los metodos privados, internal, protected
+propiedades get sert
+validaciones
+try catch
+excpetion
