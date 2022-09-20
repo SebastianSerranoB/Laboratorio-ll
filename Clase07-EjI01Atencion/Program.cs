@@ -31,11 +31,11 @@ namespace Clase07_EjI01Atencion
                 Console.WriteLine("Se agrego c3 a la cola");
             }
 
-            Console.WriteLine("Clientes pendientes: {0}", n1.ClientesPendientes);
+            Console.WriteLine("Clientes pendientes: {0}", n1.ClientesPendientes());
 
             while (~n1)
             {
-                Console.WriteLine("Clientes pendientes: {0}", n1.ClientesPendientes);
+                Console.WriteLine("Clientes pendientes: {0}", n1.ClientesPendientes());
             }
 
         }

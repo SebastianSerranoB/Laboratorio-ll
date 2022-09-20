@@ -83,21 +83,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase07_Encapsulamiento", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06-Ej03", "Clase06-Ej03\Clase06-Ej03.csproj", "{DE1A99A0-FBA6-463D-A50C-7C26F35E5156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtencionAlCliente", "AtencionAlCliente\AtencionAlCliente.csproj", "{DC91086F-5DCF-432D-8E58-4AA7C7678497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtencionAlCliente", "AtencionAlCliente\AtencionAlCliente.csproj", "{DC91086F-5DCF-432D-8E58-4AA7C7678497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase07-EjI01Atencion", "Clase07-EjI01Atencion\Clase07-EjI01Atencion.csproj", "{3FD9BA69-660B-4558-8897-F60A7FDE8EA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase07-EjI01Atencion", "Clase07-EjI01Atencion\Clase07-EjI01Atencion.csproj", "{3FD9BA69-660B-4558-8897-F60A7FDE8EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstadisticaDeportiva", "EstadisticaDeportiva\EstadisticaDeportiva.csproj", "{31285116-52CF-4505-8D66-473B46E72A2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstadisticaDeportiva", "EstadisticaDeportiva\EstadisticaDeportiva.csproj", "{31285116-52CF-4505-8D66-473B46E72A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase06_Ejercicio C01 - Estadística deportiva", "Clase06_Ejercicio C01 - Estadística deportiva\Clase06_Ejercicio C01 - Estadística deportiva.csproj", "{054F364E-84F2-4A80-8C4C-92D10114E92E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase06_Ejercicio C01 - Estadística deportiva", "Clase06_Ejercicio C01 - Estadística deportiva\Clase06_Ejercicio C01 - Estadística deportiva.csproj", "{054F364E-84F2-4A80-8C4C-92D10114E92E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase07_Ejercicio C01 - Jugadores encapsulados", "Clase07_Ejercicio C01 - Jugadores encapsulados\Clase07_Ejercicio C01 - Jugadores encapsulados.csproj", "{F38E6C29-57C0-4FBA-9767-FD89DCF434E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase07_Ejercicio C01 - Jugadores encapsulados", "Clase07_Ejercicio C01 - Jugadores encapsulados\Clase07_Ejercicio C01 - Jugadores encapsulados.csproj", "{F38E6C29-57C0-4FBA-9767-FD89DCF434E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EjercicioIntegrador-hastaEncapsulamiento", "EjercicioIntegrador-hastaEncapsulamiento", "{0B25ACF1-5CF9-4A0C-B3B0-E9D0DFF0D381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionFiscal", "EvasionFiscal\EvasionFiscal.csproj", "{27E2E7F6-B175-4080-98BB-4A1B527C1847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvasionFiscal", "EvasionFiscal\EvasionFiscal.csproj", "{27E2E7F6-B175-4080-98BB-4A1B527C1847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioIntegrados-EvasionFiscal", "EjercicioIntegrados-EvasionFiscal\EjercicioIntegrados-EvasionFiscal.csproj", "{5306325C-3439-4453-9FB3-42E22F0A4E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioIntegrados-EvasionFiscal", "EjercicioIntegrados-EvasionFiscal\EjercicioIntegrados-EvasionFiscal.csproj", "{5306325C-3439-4453-9FB3-42E22F0A4E40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase07-Ejercicio I02 -Consultaste el índice", "Clase07-Ejercicio I02 -Consultaste el índice\Clase07-Ejercicio I02 -Consultaste el índice.csproj", "{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carreras", "Carreras\Carreras.csproj", "{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase07_Ejercicio C02 - Enciendan sus motores", "Clase07_Ejercicio C02 - Enciendan sus motores\Clase07_Ejercicio C02 - Enciendan sus motores.csproj", "{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repaso_Sabados", "Repaso_Sabados", "{2A9A51AF-82A2-4E21-9B74-AE4F82D1D960}"
+	ProjectSection(SolutionItems) = preProject
+		ApuntesSabado.txt = ApuntesSabado.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +248,18 @@ Global
 		{5306325C-3439-4453-9FB3-42E22F0A4E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5306325C-3439-4453-9FB3-42E22F0A4E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5306325C-3439-4453-9FB3-42E22F0A4E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -275,6 +298,9 @@ Global
 		{F38E6C29-57C0-4FBA-9767-FD89DCF434E9} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
 		{27E2E7F6-B175-4080-98BB-4A1B527C1847} = {0B25ACF1-5CF9-4A0C-B3B0-E9D0DFF0D381}
 		{5306325C-3439-4453-9FB3-42E22F0A4E40} = {0B25ACF1-5CF9-4A0C-B3B0-E9D0DFF0D381}
+		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
+		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
+		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F75547E-4D0D-4484-B925-6AF5563363F1}

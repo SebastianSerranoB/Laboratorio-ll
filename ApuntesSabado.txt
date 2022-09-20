@@ -1,0 +1,45 @@
+propiedades -> metodos que intentan ser atributos
+metodos -> acciones, verbos
+atributos -> que es? datos, casi siempre sustantivos
+constructores, no retornan nada per se, instancian atributos, 
+la palabra reservada new retorna un nuevo puntero de la instancai de clase
+
+Persona personaUno; ->  reserva espacio en memoria para la memoria -> esta en STACK
+personaUno = new Persona(); -> heap ; se reserva dinamicamente espacio en memoria y se retorna un puntero
+
+Encapsulamiento -> restringimos el acceso a nuestra clase/objeto, restringimos la interaccion del exterior con los atributos y metodos de objeto
+Ejemplos : modificadores de acceso, propiedades, validaciones, constructores privados, solo lectura,
+-niveles de control
+
+blanco -> propiedad o atributo
+verde -> clase
+amarillo -> metodo
+-> por parametro es celeste
+-> this.atributo/metodo innecesario(porque dentro de scope no se repite) aparece gris/apgado, sino prendido
+prop
+
+propiedades Nombre
+expresiones lambda, operadores => evitan el return, reemplazan
+get => nombre
+set => nombre = value
+ctor
+prop
+prop
+
+
+crtl+p extraer metodo, clean code, TREMENDA DATA
+crtl+p extraer metodo, clean code, TREMENDA DATA
+CRTL+D sobre el mouse copia
+INSPECCION RAPIDA DEBUGGEANDO -> PERMITE PROBAR MUCHAS COSAS A VER COMO REACCIONA EL PROGRAMA EN UN SCOPE
+los objetos son referenciasw
+
+arrays,
+crear instancia, pero no variable   persona1 = new persona(new string[2]{sebastian, serrano})
+los arrays son tipo de referencia, si yo la declarara y luego la enviara como parametro a un ctor, se instanciaria un objeto
+con ese array de atributo y el tema es que yo puedo acceder a la misma referencia , puedo modificar el array
+podemos prevenirlo construyendolo en el parametro, instancando el objeto sin declarar la variable en el main program
+
+
+
+COLECCIONES
+
