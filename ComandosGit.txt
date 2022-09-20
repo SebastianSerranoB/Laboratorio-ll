@@ -1,0 +1,210 @@
+Git is a version control system that lets you manage and keep track of your source code history. 
+GitHub is a cloud-based hosting service that lets you manage Git repositories.
+
+
+
+La consola git bash, esta basada en linux y mac; compartimos muchos comandos que vemos en arq.so
+-nos movemos con cd pr archivos y directorios
+ls, -parametros etc, es linux
+pwd
+mkdir crea carpeta
+cat -> muestra contenido archivo
+rm -> remove
+mv -> cambia el nombre
+
+
+git --version    -> que version de git
+
+CONFIG  GLOBAL, configuraciones de git que aplican para todos los repositorios, no solo donde estamos parados
+git config --globlal user.name "Sebastian Serrano"
+  " "  "     " "     user.email tuemail@gmail.com
+" "  "   "    "   "  core.editor "code --wait"  -> Setea por defecto un editor de texto ( el que tiene por defecto es VIM)
+ git config --global -e abre, el wait es para que espere a cerrarlo
+git config --global core.autocrlf true/input -> esto depende, true para windows , input para mac o linux
+tiene que  ver con como se guardan los espacios en los diferentes SO
+git config -h -> menu de config
+
+
+
+
+ETAPA COMPUTADOR -> STAGE -> COMMIT -> SERVIDOR
+git init para crear un repositorio
+me crean un .git -> figura como oculto hay que listar con -a
+
+git status
+-rojo -> archivo que no esta en stage
+-> verde, ready for commit
+-> git status nos dira cuando renombramos un archivo, cuando lo eliminamos, nos dira que se puede restaurar
+Etapa STAGE
+git add -> parametros   ->  . (pone en stage todo lo que habia en carpeta) .txt (todos los archivos txt) nombreArchivo solo ese archivo
+
+
+ETAPA COMMIT
+git commit -m "este es mi commit" 
+git commit    (sin parametro) abre el editor de texto, vim por defecto
+
+
+
+
+
+rm archivo  -> remove
+git restore archivo -> restaurar un archivo previamente eliminado
+Si queremos sacar un archivo de la etapa de stage(add archivo) 
+git restore --staged archivo -> lo quita de el stage, ahora, tene en cuenta que lo que hiciste puede entenderse como revertir el add.
+es decir, que el commit no considerara ese archivo, no se efectuaran cambios en el servidor si es que modificaste , agregaste o eliminaste tal archivo
+
+mv archivo1 archivoNuevo -> modifica el nombre
+git mv archivoNuevo archivo1 -> modifica el nombre y lo agrega a stage
+
+git ignore
+Creamos por ejemplo un env, variables de entorno, archivo que tiene solamente un user y una contraseña
+para la base de datos por ejemplo
+entonces no queremos que se suban a un repo, no queremos commitearlo por error o comprometrlo
+
+dentro de tu editor de texto , creas un archivo .gitignore de nombre
+y pones las rutas al archivo que se ignora
+y haces un add .gitignore y commiteas
+o sea lo que subis al servidor, es la instruccion de lo qjue tiene que ignorar
+
+
+
+Alternativa a git status, -> buena 
+git status -s
+rojo, no stage
+verde, stage
+
+m archivo -> m por modificado
+?? archivo -> no fue agregado para que git le haga seguimiento
+si lo agregas figura
+A archivo -> a por agregado
+
+git diff 
+especifica los cambios que se realizaron en un archivo
+@ -1 linea 1 comienza, +1,3 ag @@ agregamos 3 lineas comenzando desde la uno
+
+nos dice que se elimino " la linea literal en rojo"
+en verde lo que se agrego " literal en verde"
+y en rojo figuran los saltos de linea a veces o figuran como modificado
+
+SALIR con q
+
+git diff --staged -> especifica los cambiso que se encuientran en eetapa de stage
+
+git log -> historial de comandos, logeo(gmail, nombre)
+git log --oneline -> historial pero con hash identificador de commit (pensado como numero unico para cada commit)
+
+
+Pensemos en el main -> rama principal
+diferentes desarroladores trabajan en un mismo codigo
+ellos quieren mantener un historial de sus propios commits mientras trabajen en determinado motivo del codigo
+esto lo haran en una branch (es el mismo main pero en paralelo, no modificando el main)   y cuando terminen su funcionalidad
+haran un merge ( lo meteran en el main)  y continua el desarrollo
+
+   ----
+  |    |
+------------
+
+git branch nos dice en que rama estamos
+Main == master, ahora git utiliza main no se porque se quedo con master pero es lo mismo
+git checkout -b nombreDeBranch
+ahora en git branch
+ves el maain y nombreDeBranch
+git log --oneline -> nos muestra donde estamos tambien si se modifcaron   head -> ramab
+
+
+hice cambios en la branch, que claro , no figuran en el main, como los traigo?
+desde la rama main
+git checkout main 
+git merge ramaQueQueremostraeralmain
+
+COMO CONECTAR CON GITHUB -> NUBE DE REPOSITORIO DE CODIGO
+Crear cuenta de github
+new, creas un repositorio desde la pagina de github
+y ahi te figura para crear un repo desde bash -> git init etc
+o un archivo ya trabajado subirlo como repositorio
+git remote add origin https://github.com/SebastianSerranoB/miweb.git    //link de repo creado
+git push -u origin main -> subimos/ pusheamos el cambio, pero ojo, tenemos que crear la rama main en github
+por esto es el -u (creamos rama) origin donde la crea y  nombe de rama al final
+
+Si nunca nos habiamos logeado
+te va a pedir el user y la pass de github
+lo que esta bueno hacer, es configurar un token desde github
+vas a settings -> developer setting -> personal acces tokens - > generate new token -> indicas el nombre
+le indicas fecha de expiracion y alcanze -> dale las de repositorio normalmente
+copia ese hash/llave y lo copias en la terminal 
+
+or create a new repository on the command line
+echo "# miweb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SebastianSerranoB/miweb.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/SebastianSerranoB/miweb.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cambiar la rama principal para usar 'main'
+Los repositorios recién creados usan el nombre master como la rama principal. Para asegurar compatibilidad futura, se recomienda que actualices el nombre de esta rama a main.
+
+Revisa el nombre de tu rama corriendo el siguiente comando en el computador de tu hogar o servidor de DreamHost.
+git branch -a
+Si hay varias ramas, la rama activa mostrará un * a la izquierda. Si ves que la rama principal es master, corre los siguientes comandos para actualizarlo a main.
+Asegúrate de que la rama activa sea master.
+git checkout master
+Renombralo usando la opción -m.
+git branch -m main
+Si la rama principal existe por alguna razón, puedes usar -M para forzar el cambio de nombre.
+
+Finalmente, actualiza los symbolic refs para usar main.
+git symbolic-ref HEAD refs/heads/main
+Actualizar repositorios remotos
+Si has enviado este repositorio local a un repositorio remoto (como github.com), debes enviarlo nuevamente para restablecer la rama ascendente.
+
+Cambia REMOTENAME al nombre de tu repositorio remoto. Corre git remote para ver los remotos existentes.
+
+git push -u REMOTENAME main
+Luego, debes eliminar la rama maestra antigua.
+
+git push REMOTEBRANCH --delete master
+
+
+
+QUICK NOTE , CREAR REPO Y SUBIR ARCHIVOS
+
+ABRIMOS git bash, hacemos cd hasta la carpeta
+hacemos git init
+git add .
+git commit -m "commit"
+
+-> creamos repositorio en github, sin readme, sin licencias, sin nada
+git remote add origin https://github.com/SebastianSerranoB/miweb.git
+git branch -M main
+git push -u origin main
+
+FIN
+
+
+
+
+
+
+
+
+
