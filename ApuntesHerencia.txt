@@ -1,0 +1,61 @@
+DUDA
+Lo primero que debemos saber es que, un sub-tipo es también del tipo padre,
+por lo que se pueden almacenar referencias a objetos de tipos derivados en variables o argumentos del tipo base.
+
+--!es decir, puedo referenciar a PERRO dentro de la declaracion de ANIMAL?
+--! a que nos referimos on la interfaz de una clase? (no interfaces referido a clases abstractas)
+--!¿Una clase pública puede heredar de una clase privada?
+
+
+
+NOTAS
+La herencia es una relación "es un", mientras que la composición refleja una relación "tiene un".
+Es decir, 
+en herencia: un perro es una mascota , es un animal, 
+en composicion: un equipo de futbol tiene un jugador//11 jugadores pero se entiende, esta compuesto de otros objetos pero no los hereda
+-
+REGLA
+S.O.L.I.D: Principio de sustitución de Liskov
+En 1988, la científica Barbara Liskov propuso que cada clase que hereda de otra debe poder usarse como su padre sin necesidad de conocer las diferencias entre ellas. 
+En otras palabras, todas las operaciones definidas en la clase base deben significar lo mismo cuando son reutilizadas por las clases derivadas.
+Cuando decidimos crear una nueva clase heredando de otra existente, estamos diciendo que la nueva clase "es una" versión más especializada de la clase base.
+La clase base impone definiciones y restricciones sobre cómo operará la clase derivada. Si la clase derivada no va a adherir completamente a la interfaz de la clase base, 
+entonces no corresponde aplicar herencia.
+
+-
+La herencia en C# es híbrida y soporta los tipos de herencia simple, multi-nivel y jerárquica. No admite herencia múltiple, es decir que cada clase podrá heredar de solo una clase base.
+
+Para indicar que una clase hereda de otra lo único que tenemos que hacer es, seguido del nombre de la clase derivada, indicar el nombre de la clase base precedido por el símbolo :.
+Public class Estudiante : Persona
+{
+}
+Qué se hereda y qué no?
+Las clases derivadas heredan todos los miembros de la clase base, salvo los constructores. Eso incluye miembros privados, los cuales se heredan pero no son accesibles desde la clase derivada. Pensemos que la clase derivada incluye los atributos y métodos de la clase base, por lo tanto también los está herendando, incluso si no los puede ver existen en memoria.
+
+Modificador protected
+Al definir atributos con el modificador de visibilidad protected haremos que este sea accesible sólo dentro de la relación de herencia. Por lo que para una clase derivada el modificador protected es equivalente a public, pero para una clase ajena a la relación este modificador es igual a private.
+
+Exist
+en algunas variantes de este mod
+ficador. El modificador private protected hace que el miembro sólo sea accesible por clases derivadas en el mismo ensamblado (en el mismo proyecto). El modificador protecte
+d internal hace que el miembro sólo sea accesible desde el ensamblado donde se encuentra declarada la clase o por tipos derivados en cualquier ensamblado.
+
+
+
+protected
+paso intermedio entre privado y publico
+Es una relacion de acceso entre clases heredadas
+es decir, los atributos declarados como protected en una clase padre
+podran ser accedidos por las clases que deriven de ella, pero no podran acceder clases externas, es decir, que no deriven de esa
+ahora, si la clase padre declara private , la hija tiene el atributo pero no puede acceder a el
+
+-Las clases hijas nunca pueden ser mas accesibles que las padres, es decir , si son internal, la hija no puede ser public
+- no puedo reemplazar atributos
+
+para instanciar un hijo, debo siempre instanciar un padre, es decir, debo tene rel constructor que llame a : base(args)
+lo que s epuede hacer si no te pasaran los atributos para el bAse es tener un constructor mas, que envie parametros por defectos
+
+
+public abstract class MASCOTA
+->ABSTRACT puede ser heredada, pero nunca instanciada, es una clase de molde, teorica, digamos, no puede dinstanciarse
+-> sealed no puede ser heredada

@@ -19,7 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apuntes", "Apuntes", "{BABB
 	ProjectSection(SolutionItems) = preProject
 		arrays,colecciones.txt = arrays,colecciones.txt
 		DependenciaY.txt = DependenciaY.txt
+		NOTASTP1.txt = NOTASTP1.txt
 		Shortcuts.txt = Shortcuts.txt
+		..\..\..\Downloads\shortcuts_visualstudio.png = ..\..\..\Downloads\shortcuts_visualstudio.png
+		..\..\..\Downloads\snippetsc#.png = ..\..\..\Downloads\snippetsc#.png
 		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
@@ -109,6 +112,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repaso_Sabados", "Repaso_Sa
 	ProjectSection(SolutionItems) = preProject
 		ApuntesSabado.txt = ApuntesSabado.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase08_Herencia", "Clase08_Herencia", "{B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}"
+	ProjectSection(SolutionItems) = preProject
+		ApuntesHerencia.txt = ApuntesHerencia.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automoviles", "Automoviles\Automoviles.csproj", "{29EA50AD-274D-48E1-BAEE-488523F56A35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehiculosTerrestres", "VehiculosTerrestres\VehiculosTerrestres.csproj", "{DB973081-29E4-414D-97C5-9993216F7BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase08_Ejercicio I01 - El viajar es un placer", "Clase08_Ejercicio I01 - El viajar es un placer\Clase08_Ejercicio I01 - El viajar es un placer.csproj", "{466BBD9E-1470-4BCB-9CD2-EDE155636BA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JugadoresEncapsulados_Herencia", "JugadoresEncapsulados_Herencia\JugadoresEncapsulados_Herencia.csproj", "{0A508A21-BE9E-4509-9479-3B39E6CD4064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase08_Ejercicio C01 - Herencia deportiva", "Clase08_Ejercicio C01 - Herencia deportiva\Clase08_Ejercicio C01 - Herencia deportiva.csproj", "{787DACA1-B485-4BE9-B40C-4F104A91F0C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -260,6 +278,26 @@ Global
 		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EA50AD-274D-48E1-BAEE-488523F56A35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EA50AD-274D-48E1-BAEE-488523F56A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EA50AD-274D-48E1-BAEE-488523F56A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EA50AD-274D-48E1-BAEE-488523F56A35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB973081-29E4-414D-97C5-9993216F7BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB973081-29E4-414D-97C5-9993216F7BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB973081-29E4-414D-97C5-9993216F7BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB973081-29E4-414D-97C5-9993216F7BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466BBD9E-1470-4BCB-9CD2-EDE155636BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466BBD9E-1470-4BCB-9CD2-EDE155636BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466BBD9E-1470-4BCB-9CD2-EDE155636BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466BBD9E-1470-4BCB-9CD2-EDE155636BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A508A21-BE9E-4509-9479-3B39E6CD4064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A508A21-BE9E-4509-9479-3B39E6CD4064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A508A21-BE9E-4509-9479-3B39E6CD4064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A508A21-BE9E-4509-9479-3B39E6CD4064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787DACA1-B485-4BE9-B40C-4F104A91F0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787DACA1-B485-4BE9-B40C-4F104A91F0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787DACA1-B485-4BE9-B40C-4F104A91F0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787DACA1-B485-4BE9-B40C-4F104A91F0C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +339,11 @@ Global
 		{1BA4CE70-9B20-4B29-B5A7-6BEB9A955DD2} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
 		{DBC5A632-06B0-48DF-81A2-69A1EBBDEA6B} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
 		{C1D320FF-043F-4AE9-BE7C-4BF299EC3CCC} = {403EF248-78BD-41DC-9CEA-2C3B5BEF8488}
+		{29EA50AD-274D-48E1-BAEE-488523F56A35} = {B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}
+		{DB973081-29E4-414D-97C5-9993216F7BBA} = {B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}
+		{466BBD9E-1470-4BCB-9CD2-EDE155636BA4} = {B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}
+		{0A508A21-BE9E-4509-9479-3B39E6CD4064} = {B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}
+		{787DACA1-B485-4BE9-B40C-4F104A91F0C5} = {B359D730-FCAE-4D9B-BF4C-83FDCBA8E71A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F75547E-4D0D-4484-B925-6AF5563363F1}

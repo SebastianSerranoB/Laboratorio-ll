@@ -1,0 +1,81 @@
+HARDCODEADOS
+FILTRO
+CONTRASEÑA Y MAIL
+PRODUCTOS
+PRECIO
+CATEGORIA
+VAN A VENIR HARDCODEADOS
+PERO QUE SE PUEDA AGREGAR
+
+ABM SI O NO?
+
+FILTRO POR TAG O POR NOMBRE! RECOMIENDA
+FILTRADO VA POR LOS TAGS
+O BUSCO POR NOMBRE O PRECIO
+
+La aplicacion le tien eque servir a un cliente, a tu tio ponele que te pide che vos que programas
+haceme esto
+no me dan las manos
+haceme un programa que me deje ver los productos modificarle el precio, el tag, el nombre
+que pueda filtrar
+que me deje logear
+que muestre 
+que sea intuitivo
+
+parciales ocubre
+5 programacion (teoria), el 6 laboratorio (practica)
+
+
+el de dueño puede acceder a vendedor pero el que es vendedor pero no dueño no entra a dueño
+
+pero el vendedor no puede acceder al de dueño(gestion de inventario)
+
+MINIMO UNA COLECCION -> RECOMIENDAN MAS
+ENUMERADOS
+CLASES ESTACIAS SI ENCUENTRAN ALGO JOYA
+CLASE PRIVADA PROTECTED JUGA
+TRATA DE IMPLEMENTAR LO QU EMAS PUEDAS LO QUE VISTE, SIN HACER ALGO RARO
+Tienen que estar todos los temas y bien aplciados sino baja
+minimo algun explicit implicit -> siempre con sentido
+
+sobrecarga de metodos , etc
+primero clases, desp funconalidad, luegoform
+
+clases -> funconalidaedes, luego form
+
+recomiendan primero probar todo en proyecto consola
+
+userfriendly++
+
+LO QUE SE EVALUA FUNDAMENTALMENTE ES LA FUNCIONALIDAD CORRECTA DE TODOS LOS ELEMENTOS
+luego suman puntos los demas detalles
+
+OBLIGATORIO
+PUSHEAR ANTES DEL MIERCOLES
+OBLIGATORIO! REPO PRIVADO
+
+github agregar 
+
+NOMBRE AL REPO
+APELLIDO.NOMBRE.TPLAB1
+
+
+login
+acceso rapido me rellena el textbox okey y luego le da a ingresar
+el login te da la opcion de poner rellenar y acceso rapido rellena automatico, pero el cliente aprieta elbotonon de logearse
+
+en el repo 
+SETTINGS
+COLABORADORES
+ADD PEOPLE -> USERNAME DEL COLABORARDOOR
+README VA, RECOMIENDA SI, TIENNE UNO QUE RECOMIENDAN
+CON CAPTURAAS GIF , TODO PARA EXPLICAR MAS O MENOS COMO FUNCIONA
+FUNCIONALIDAD CLAVE Y ALGUNAS FOTOS
+ES LA CLAVE EL READMEES UN RESUMEN DE COMO FUNCIONA EL PROGRAMA
+ES CLAVE, ES EL LO PRIMERO QUE SE MRIA
+
+
+tengan en cuenta q los recruiter suelen mirar mas el readme que el codigo...
+chusmeen despues lo que es el markup
+
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
